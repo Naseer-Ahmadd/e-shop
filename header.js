@@ -30,10 +30,10 @@ class Myheader extends HTMLElement{
                     <a class="nav-link "  href="watches.html" aria-current="page"  >watches</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link"  >Laptops</a>
+                    <a class="nav-link"  ></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link "   href="#">cloths</a>
+                    <a class="nav-link "   href="#"></a>
                   </li>
                  
 
@@ -44,8 +44,8 @@ class Myheader extends HTMLElement{
                   </li>
                 
                 <li class="nav-item" style="padding-left:100px;"  >
-                <a href="cart.html" class="nav-link">Cart &nbsp;<span><i class="fas fa-shopping-cart fa-lg"><span class="badge badge-primary " style="font-size:12px;position:relative;top:-15px;">
-              ${totalItems()}
+                <a href="cart.html" class="nav-link">Cart &nbsp;<span><i class="fas fa-shopping-cart fa-lg"><span id="badge" class="badge badge-primary " style="font-size:12px;position:relative;top:-15px;">
+             
                 </span>
                 </i></span></a>      
                </li>

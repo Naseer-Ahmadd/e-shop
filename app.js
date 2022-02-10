@@ -74,7 +74,7 @@ var products =[
 
 function addToCart(i){
     alert("item added")
-    window.location.reload();
+    // window.location.reload();
    
     var cart = new Array()
     cart= JSON.parse(localStorage.getItem("cart"));
@@ -92,6 +92,7 @@ function addToCart(i){
     localStorage.setItem("cart", JSON.stringify(cart));
     console.log(cart);
 
+    totalItems()
 
 }
 
@@ -164,7 +165,7 @@ let cartTotal = 0;
 
 
     
-function totalItems(){
+    function totalItems(){
    
        
      cart = JSON.parse(localStorage.getItem("cart"))
@@ -172,24 +173,23 @@ function totalItems(){
     
         if(cart == null){
     
-            return 
+            return 0
             
-        }
-          
-        return cart.length
+        }else
 
-        
+            // return cart.length
+            document.getElementById("badge").innerText=cart.length
     
         }
     
-      console.log(totalItems());  
+    //   console.log(totalItems());  
 
 
 
 
     
 
-
+totalItems()
 
 
 
